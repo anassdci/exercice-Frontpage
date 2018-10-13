@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
     <title>Document</title>
 </head>
 
@@ -13,153 +17,315 @@
 
     <header>
         <nav>
-            <div class="logo"><a href="">Shapely Demo</a></div>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li>
-                    <a href="">About the tests</a>
-                    <ul>
-                        <li><a href="">page image alignement</a></li>
-                        <li><a href=""></a>page markup and formating</li>
-                        <li><a href=""></a>cleaning floats</li>
-                        <li><a href=""></a>page with comments</li>
-                        <li><a href=""></a>page with comments disabled</li>
 
-                    </ul>
-                </li>
-                <li>
-                    <a href="">level 1</a>
-                    <ul>
-                        <li>
-                            <a href="">level2</a>
-                            <ul>
-                                <li><a href="">level3</a></li>
-                                <li><a href="">level3a</a></li>
-                                <li><a href="">level3b</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">level2a</a></li>
-                        <li><a href="">level2b</a></li>
-                    </ul>
-                </li>
-                <li><a href="">shop</a>
-                    <ul>
-                        <li><a href="">page A</a></li>
-                        <li><a href="">page B</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="search"></div>
+            <div class="nav-wrapper">
+                <a href="#" class="logo">Shapely Demo</a>
+                <ul>
+
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li class="dropdown">
+                        <a href="#About-the-tests" class="dropbtn">ABOUT THE TESTS</a>
+                        <div class="dropdown-content">
+                            <a href="#">Page Image Alignement</a>
+                            <a href="#">Page Markup And Formatting</a>
+                            <a href="#">Cleaning Float</a>
+                            <a href="#">Page with comments</a>
+                            <a href="#">Page with comments disabled</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#About-the-tests" class="dropbtn">LEVEL1</a>
+                        <div class="dropdown-content">
+                            <a href="#">LEVEL2 </a>
+                            <a href="#">LEVEL2a</a>
+                            <a href="#">LEVEL2B</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#About-the-tests" class="dropbtn">SHOP</a>
+                        <div class="dropdown-content">
+                            <a href="#">PAGE A</a>
+                            <a href="#">PAGE B</a>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </li>
+                </ul>
+
+
         </nav>
     </header>
-    <section>
+    <section id="home">
         <h1>We Change Everything WordPress</h1>
         <p>This is the only WordPress theme you will ever want to use.</p>
-        <button><a href="">Download Now</a></button>
-        <button><a href="">Read more</a></button>
+        <div class="btn-home">
+            <button>DOWNLOAD NOW</button>
+            <button>READ MORE</button>
+        </div>
     </section>
-    <section>
-        <img src="" alt="">
-        <div>
-            <h2>SEO Friendly</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar luctus sem, eget porta orci.
-                Maecenas molestie dui id diam feugiat, eu tincidunt mauris aliquam. Duis commodo vitae ligula et
-                interdum. Maecenas faucibus mattis imperdiet. In rhoncus ac ligula id ultricies.
+    <section id="seo-friendly">
+        <div class="seo-friendly-wrapper">
+            <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/macbook-preview-flexible.png"
+                alt="" class="seo-friendly-left">
+            <div class="seo-friendly-right">
+                <h2>SEO Friendly</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar luctus sem, eget porta orci.
+                    Maecenas molestie dui id diam feugiat, eu tincidunt mauris aliquam. Duis commodo vitae ligula et
+                    interdum. Maecenas faucibus mattis imperdiet. In rhoncus ac ligula id ultricies.
 
-            </p>
-            <button><a href="">Read more</a></button>
+                </p>
+                <button>READ MORE</button>
+            </div>
         </div>
     </section>
-    <section>
-        <div>
-            <h2>Portfolio Section</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar luctus sem, eget porta orci.
-                Maecenas molestie dui id diam feugiat, eu tincidunt mauris aliquam. Duis commodo vitae ligula et
-                interdum.</p>
-            <button><a href="">See it in action</a></button>
+    <section id="portfolio">
+        <div class="portfolio-wrapper">
+            <div class="portfolio-left">
+                <h2>Portfolio Section</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar luctus sem, eget porta orci.
+                    Maecenas molestie dui id diam feugiat, eu tincidunt mauris aliquam. Duis commodo vitae ligula et
+                    interdum.</p>
+                <button>SEE IT IN ACTION</button>
+            </div>
+            <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/flexible-portfolio.png" alt="">
         </div>
-        <img src="" alt="">
     </section>
-    <section>
+    <section id="parallax-section">
         <h1>Small Parallax Section</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet rhoncus porta. Ut quis sem quis
-            purus lobortis dictum. Aliquam nec dignissim nisl. Vivamus cursus feugiat sapien, eget tincidunt leo ornare
-            quis.</p>
-        <button><a href="">More info</a></button>
+            purus lobortis dictum. Aliquam nec dignissim nisl. Vivamus cursus feugiat sapien.</p>
+        <button>MORE INFO</button>
     </section>
-    <section>
+    <section id="limitless-option">
+
         <h2>Limitless Options</h2>
         <p>Phasellus sed nisi ac dui interdum semper. Etiam consequat fermentum sollicitudin. Fusce vulputate porta
-            faucibus. Vivamus nulla tellus, accumsan non efficitur id, pretium quis ante</p>
-        <button><a href="">Download Now</a></button>
-        <img src="" alt="">
-    </section>
-    <section>
-        <h2>Our Latest Projects</h2>
-        <p>Here is our latest projects. You'll love them!</p>
-        <div>
-            <p><a href=""></a></p>
-        </div>
-        <div>
-            <p><a href=""></a></p>
-        </div>
-        <div>
-            <p><a href=""></a></p>
-        </div>
-        <div>
-            <p><a href=""></a></p>
-        </div>
-        <div>
-            <p><a href=""></a></p>
-        </div>
-        <div>
-            <p><a href=""></a></p>
-        </div>
-        <div>
-            <p><a href=""></a></p>
-        </div>
-        <div>
-            <p><a href=""></a></p>
-        </div>
-        <div>
-            <p><a href=""></a></p>
-        </div>
-        <div>
-            <p><a href=""></a></p>
+            faucibus. <br> Vivamus nulla tellus, accumsan non efficitur id, pretium quis ante</p>
+        <button>DOWNLOAD NOW</button>
+        <div class="limitless-option-picture">
+            <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/12/photo-1440557653082-e8e186733eeb-1.jpg"
+                alt="">
         </div>
     </section>
-    <section>
-        <h2>What Our Customers Say</h2>
-        <p>Integer ut rutrum nulla, sit amet fringilla nisi. Nam nisl velit, vehicula at nibh sed, porttitor
-            sollicitudin ante. Sed justo augue, vestibulum ut efficitur vitae, euismod et justo. Mauris sed mattis
-            ante. Ut ligula lectus, consequat vitae neque ac, gravida hendrerit ante.</p>
-        <div>
-            <button></button>
-            <button></button>
-            <img src="" alt="">
-            <picture></picture>
+    <section id="projects">
+        <div class="projects-wrapper">
+            <h2>Our Latest Projects</h2>
+            <p>Here is our latest projects. You'll love them!</p>
+            <div class="projects-grid">
+                <div class="container">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/12/photo-1443890484047-5eaa67d1d630-1.jpg"
+                        alt="Avatar" class="image">
+                    <div class="overlay">
+                        <div class="text">Project #1</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1422568374078-27d3842ba676-1.jpg"
+                        alt="" class="image">
+                    <div class="overlay">
+                        <div class="text">Project #2</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1447834353189-91c48abf20e1-1-1.jpg"
+                        alt="" class="image">
+                    <div class="overlay">
+                        <div class="text">Project #3</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/12/photo-1447877085163-3cce903855cd-1.jpg"
+                        alt="" class="image">
+                    <div class="overlay">
+                        <div class="text">Project #4</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1447958374760-1ce70cf11ee3-1-1.jpg"
+                        alt="" class="image">
+                    <div class="overlay">
+                        <div class="text">Project #5</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1430329429612-babb42f88673-1-1.jpg"
+                        alt="" class="image">
+                    <div class="overlay">
+                        <div class="text">Project #6</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1447958374760-1ce70cf11ee3-1-1.jpg"
+                        alt="" class="image">
+                    <div class="overlay">
+                        <div class="text">Project #7</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1449057528837-7ca097b3520c-1-1.jpg"
+                        alt="" class="image">
+                    <div class="overlay">
+                        <div class="text">Project #8</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1448518184296-a22facb4446f-1-1.jpg"
+                        alt="" class="image">
+                    <div class="overlay">
+                        <div class="text">Project #9</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1451186859696-371d9477be93-1-1.jpg"
+                        alt="" class="image">
+                    <div class="overlay">
+                        <div class="text">Project #10</div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+    <section id="customers">
+        <h3>What Our Customers Say</h3>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">Integer ut rutrum nulla, sit amet fringilla nisi. Nam nisl velit, vehicula at
+                    nibh sed, porttitor sollicitudin ante. Sed justo <br> augue, vestibulum ut efficitur vitae, euismod
+                    et
+                    justo. Mauris sed mattis ante. Ut ligula lectus, consequat vitae neque <br> ac, gravida hendrerit
+                    ante.
+                </div>
+                <div class="imageslide">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/mike-muller-150x150.jpg"
+                        alt="">
+                </div>
+                <div class="text"> <strong>John Doe</strong> </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">Nunc sit amet lobortis nulla. Nunc ullamcorper, mi id luctus dictum, augue
+                    tortor dictum ipsum, nec congue arcu <br> lorem in nisl. Duis neque lacus, viverra non mauris ac,
+                    pharetra rhoncus libero. Aliquam varius viverra ex, in venenatis <br> magna ornare sit amet.
+                    Integer
+                    varius sit amet turpis eu ullamcorper.
+                </div>
+                <div class="imageslide">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/Aigars-Silkalns-150x150.jpg"
+                        alt="">
+                </div>
+                <div class="text"><strong>Aigars Silkalns</strong> </div>
+            </div>
+
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+    </section>
+    <section id="clients">
         <h2>Our Main Clients</h2>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <div class="slidecontainer card">
+            <div class="icons">
+                <div class="slide">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/js-logo.png">
+                </div>
+
+                <div class="slide">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/html5-logo.png">
+                </div>
+
+                <div class="slide">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/css-logo.png">
+                </div>
+
+                <div class="slide">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/less-logo.png">
+                </div>
+
+                <div class="slide">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/sass-logo.png">
+                </div>
+
+                <div class="slide">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/bootstrap-logo.jpg">
+                </div>
+
+                <div class="slide">
+                    <img src="https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/adobe-logo.png">
+                </div>
+
+
+            </div>
+        </div>
     </section>
     <footer>
-        <h2>Do you like this awesome WordPress theme?</h2>
-        <button><a href="">Download now</a></button>
-        <div>
-            <small>Theme by Colorlib Powered by WordPress</small><button><a href=""></a></button>
+        <div class="footer1">
+            <h2>Do you like this awesome WordPress theme?</h2>
+            <button>DOWNLOAD NOW</button>
+        </div>
+
+        <div class="footer2">
+            <small>Theme from Colorlib </small>
+            <button><a href="#home"><i class="fa fa-angle-up"></i></a> </button>
         </div>
     </footer>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
+    <script src='https://use.fontawesome.com/da71215243.js'></script>
+    <script>
+        $(document).ready(function () {
+            $('.icons').slick({
+                //Basic settings
+                autoplay: true,
+                autoplaySpeed: 2500,
+                arrows: false,
+                swipeToSlide: true,
+                touchMove: true,
+                ltr: true,
+                infinite: true,
+                variableWidth: true,
+                dots: false,
+                pauseOnHover: false
+            });
+        });
+    </script>
 </body>
 
 </html>
