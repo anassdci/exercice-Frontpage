@@ -38,6 +38,7 @@ nav {
 .nav-wrapper {
     margin: 0 15%;
     padding-top: 20px;
+    position: relative;
 }
 
 a.logo {
@@ -71,7 +72,8 @@ nav li {
 }
 
 nav li a,
-.dropbtn {
+.dropbtn,
+#nav-responsive li a {
     font-family: 'Raleway', sans-serif;
     display: inline-block;
     color: #333;
@@ -85,7 +87,8 @@ nav li a,
 }
 
 nav li a:hover,
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn,
+#nav-responsive li a:hover {
     color: #337ab7;
 }
 
@@ -132,6 +135,49 @@ button {
     font-size: 17px;
 
     cursor: pointer;
+}
+
+.icon {
+    display: none;
+}
+
+#nav-responsive {
+    display: none;
+}
+
+@media (max-width: 990px) {
+    header {
+        top: 0;
+        left: 0;
+    }
+
+    .icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 25px;
+    }
+
+    nav ul {
+
+        float: none;
+        display: none;
+    }
+
+    #nav-responsive {
+        display: none;
+        height: 0;
+        background-color: #fff;
+    }
+
+    #nav-responsive ul {
+        list-style-type: none;
+        margin: 0;
+    }
+
+    /* #home {
+        margin-top: 320px;
+    } */
 }
 
 #home {
@@ -385,6 +431,11 @@ button {
 }
 
 @media (max-width: 1200px) {
+    .nav-wrapper {
+        margin: 0 7%;
+
+    }
+
     #home h1 {
         width: 800px;
         text-align: center;

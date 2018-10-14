@@ -54,9 +54,28 @@
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </li>
                 </ul>
-
+                <a href="#" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
 
         </nav>
+        <section id="nav-responsive">
+            <div class="nav-responsive-wrapper">
+
+                <ul>
+
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#About-the-tests" class="dropbtn">ABOUT THE TESTS</a></li>
+                    <li><a href="#About-the-tests" class="dropbtn">LEVEL1</a></li>
+                    <li><a href="#About-the-tests" class="dropbtn">SHOP</a></li>
+                    <li><button type="submit"><i class="fa fa-search"></i></button></li>
+                </ul>
+
+            </div>
+        </section>
     </header>
     <section id="home">
         <h1>We Change Everything WordPress</h1>
@@ -330,6 +349,21 @@
                 pauseOnHover: false
             });
         });
+
+        function myFunction() {
+            var e = document.getElementById("nav-responsive");
+            if (e.style.display == 'block') {
+                e.style.display = 'none';
+                document.body.style.marginTop = "0px";
+                document.getElementsByTagName("header").style.height = "70px";
+            } else
+                e.style.display = 'block';
+
+            document.body.style.marginTop = "320px";
+            document.getElementById("nav-responsive").style.height = "250px";
+            document.getElementsByTagName("header").style.height = "330px";
+
+        }
     </script>
 </body>
 
