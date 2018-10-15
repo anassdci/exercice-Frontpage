@@ -68,9 +68,9 @@
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#blog">BLOG</a></li>
                     <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#About-the-tests" class="dropbtn">ABOUT THE TESTS</a></li>
-                    <li><a href="#About-the-tests" class="dropbtn">LEVEL1</a></li>
-                    <li><a href="#About-the-tests" class="dropbtn">SHOP</a></li>
+                    <li><a href="#About-the-tests">ABOUT THE TESTS</a></li>
+                    <li><a href="#About-the-tests">LEVEL1</a></li>
+                    <li><a href="#About-the-tests">SHOP</a></li>
                     <li><button type="submit"><i class="fa fa-search"></i></button></li>
                 </ul>
 
@@ -364,7 +364,17 @@
             document.getElementsByTagName("header").style.height = "330px";
 
         }
-
+        $(document).ready(function () {
+            $(window).resize(function () {
+                $('#nav-responsive').hide();
+                $("header").css("height", "70px");
+                $("body").css("marginTop", "0px");
+            });
+            $("#nav-responsive ul li a").click(function () {
+                $('#nav-responsive').css("display", "none");
+                $("body").css("marginTop", "0px");
+            });
+        })
         // Select all links with hashes
         $('a[href*="#"]')
             // Remove links that don't actually link to anything

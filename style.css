@@ -1,9 +1,4 @@
 /* Header */
-@font-face {
-    font-family: "font1";
-    src: url(font/font1.ttf)
-}
-
 * {
     box-sizing: border-box;
 }
@@ -55,8 +50,6 @@ a.logo:hover {
     color: #333;
     transition: all 0.5s ease;
 }
-
-
 
 nav ul {
     list-style-type: none;
@@ -236,8 +229,6 @@ button {
     transition: all 0.5s ease;
 }
 
-
-
 #home button:nth-child(2):hover {
     background-color: #5234f9;
     border-color: #5234f9;
@@ -297,10 +288,6 @@ button {
 .portfolio-left {
     margin: 100px 0 100px 40%;
 }
-
-
-
-
 
 .seo-friendly-right h2,
 .portfolio-left h2,
@@ -378,8 +365,6 @@ button {
     text-align: center;
 }
 
-
-
 #limitless-option {
     text-align: center;
     background-color: #f5f5f5;
@@ -396,10 +381,6 @@ button {
 #limitless-option button {
     margin-bottom: 24px;
 }
-
-
-
-
 
 #projects {
     background-color: #0e1015;
@@ -512,7 +493,6 @@ button {
     #portfolio img {
         height: 100%;
         width: 100%;
-
     }
 
     .seo-friendly-left,
@@ -680,7 +660,6 @@ button {
     line-height: 24px;
 }
 
-
 #customers .numbertext {
     color: #fff;
     font-size: 14px;
@@ -759,8 +738,6 @@ button {
     height: 60px;
     opacity: 0.6;
 }
-
-
 
 @media (max-width: 767px) {
     .slidecontainer {
@@ -947,5 +924,4 @@ button {
     font-size: 15px;
     color: #8c979e;
     font-weight: 600;
-
 }
