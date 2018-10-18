@@ -208,6 +208,7 @@ button {
   line-height: 64px;
   font-weight: 400;
   margin-bottom: 24px;
+  text-align: center;
 }
 
 #home p {
